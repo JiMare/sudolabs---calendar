@@ -7,7 +7,7 @@ export const getProfit = (prices) => {
     if (bestSell - start > profit) {
       profit = bestSell - start;
       buyIndex = i;
-      sellIndex = prices.indexOf(bestSell);
+      sellIndex = prices.slice(i + 1).indexOf(bestSell) + i + 1;
     }
   }
   return {
