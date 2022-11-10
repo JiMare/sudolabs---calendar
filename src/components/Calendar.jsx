@@ -33,12 +33,12 @@ export const Calendar = ({ dateRange, handlePrices, handleDateRange }) => {
   };
 
   return (
-    <>
+    <div className="calendar-container">
       <Button onClick={onOpenModal}>Choose Date Range</Button>
       <Popper
         open={dateRangePickerActivated}
         anchorEl={anchorEl}
-        placement="top-start"
+        placement="top"
       >
         <ClickAwayListener onClickAway={onClose}>
           <Card className="calendar">
@@ -59,6 +59,6 @@ export const Calendar = ({ dateRange, handlePrices, handleDateRange }) => {
           </Card>
         </ClickAwayListener>
       </Popper>
-    </>
+    </div>
   );
 };

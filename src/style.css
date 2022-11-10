@@ -12,6 +12,12 @@ html {
   max-width: 60%;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
 }
 
 .calendar {
@@ -21,4 +27,68 @@ html {
 .calendar__buttons {
   display: flex;
   justify-content: flex-end;
+}
+
+.title {
+  color: grey;
+}
+
+.title > span {
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(62, 165, 220);
+  padding: 0.4rem;
+  background-color: bisque;
+  border-radius: 0.8rem;
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.prices__title {
+  color: grey;
+  font-size: 3rem;
+}
+
+.price {
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.price--buy,
+.day-buy > span {
+  background-color: rgb(135, 221, 135);
+}
+
+.price--sell,
+.day-sell > span {
+  background-color: rgb(158, 92, 219);
+}
+
+.result {
+  margin-top: 2rem;
+  max-width: 30%;
+  margin-inline: auto;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: grey;
+  padding-block: 1rem; 
+}
+
+.subtitle > span {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  color: #000;
+}
+
+.profit > span {
+  background-color: rgb(135, 202, 221);
 }
